@@ -135,29 +135,112 @@ body {
 }
 
 .Details {
+  display: block;
+  background: red;
   width: 375px;
   height: 1395.66px;
+
+  .First {
+    background-color: cornflowerblue;
+    position: relative;
+    top: 42px;
+    left: 30px;
+    width: 314px;
+    height: 370px;
+    &-description {
+      margin-top: 26px;
+
+      &--title {
+        width: 198px;
+        height: 72px;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 35px;
+      }
+
+      &--paragraph {
+        margin-top: 10px;
+        position: absolute;
+        width: 272px;
+        height: 84px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+    &-image {
+      background-color: blueviolet;
+      margin-top: 37px;
+      &--photo {
+        width: 192.76px;
+        height: 109.93px;
+      }
+    }
+  }
+
+  .Shop {
+    background-color: cornflowerblue;
+    position: relative;
+    top: 42px;
+    left: 30px;
+    width: 314px;
+    height: 370px;
+
+    &-description {
+      margin-top: 26px;
+
+      &--title {
+        width: 218px;
+        height: 70px;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 35px;
+      }
+
+      &--paragraph {
+        margin-top: 10px;
+        position: absolute;
+        width: 272px;
+        height: 84px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+    &-image {
+      background-color: blueviolet;
+      margin-top: 37px;
+      &--photo {
+        width: 192.76px;
+        height: 109.93px;
+      }
+    }
+  }
 }
 
 .Footer {
-  position: absolute;
+  display: block;
+  background-color: brown;
   width: 375px;
   height: 89px;
   left: 0px;
-  top: 4590px;
   box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
 
   &-title {
     position: relative;
-    left: 17px;
-    top: 22.48px;
     font-weight: 300;
     color: #08a6e4;
   }
   &-copyright {
     position: relative;
-    left: 17px;
-    top: 53px;
     font-weight: 400;
     color: #a5a5a5;
   }
