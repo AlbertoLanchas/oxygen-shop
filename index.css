@@ -212,6 +212,106 @@ body {
   width: 192.76px;
   height: 109.93px;
 }
+.Details .Brand {
+  background-color: cornflowerblue;
+  position: relative;
+  top: 42px;
+  left: 30px;
+  width: 314px;
+  height: 370px;
+}
+.Details .Brand-description {
+  margin-top: 26px;
+}
+.Details .Brand-description--title {
+  width: 274px;
+  height: 109px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+}
+.Details .Brand-description--paragraph {
+  margin-top: 10px;
+  position: absolute;
+  width: 272px;
+  height: 84px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+.Details .Brand-image {
+  background-color: blueviolet;
+  margin-top: 37px;
+}
+.Details .Brand-image--photo {
+  width: 192.76px;
+  height: 109.93px;
+}
+
+.Princing {
+  background-color: burlywood;
+  display: block;
+}
+.Princing-title {
+  width: 114px;
+  height: 42px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+}
+
+.Suscription {
+  background-color: white;
+  position: relative;
+  width: 293px;
+  height: 251px;
+  left: 41px;
+}
+.Suscription-general {
+  background-color: red;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+}
+.Suscription-general--type {
+  width: 52px;
+  height: 24px;
+}
+.Suscription-general--price {
+  width: 59px;
+  height: 64px;
+}
+.Suscription-details {
+  display: inline-block;
+  position: relative;
+  background-color: brown;
+}
+.Suscription-begin {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  height: 50px;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+  border-radius: 23px;
+}
+
+.basic {
+  border: red 2px solid;
+}
+
+.professional {
+  border: #07ace6 2px solid;
+}
+
+.premium {
+  border: green 2px solid;
+}
 
 .Footer {
   display: block;
