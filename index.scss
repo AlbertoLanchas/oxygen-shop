@@ -123,8 +123,7 @@ body {
     &__img {
       position: relative;
       z-index: 2;
-      top: -58px;
-      left: -5px;
+      left: 20px;
     }
     &__number {
       position: relative;
@@ -132,8 +131,8 @@ body {
       font-size: 20px;
       line-height: 24px;
       letter-spacing: 5.96px;
+      margin: 11px 0;
       color: #000000;
-      top: -58px;
     }
 
     &__details {
@@ -142,7 +141,7 @@ body {
       font-size: 17px;
       line-height: 20px;
       text-align: center;
-      top: -58px;
+
       color: #a5a5a5;
     }
   }
@@ -162,9 +161,9 @@ body {
     }
     &__img {
       position: relative;
+      top: 10px;
+      left: 30px;
       z-index: 2;
-      top: -58px;
-      left: -5px;
     }
     &__number {
       position: relative;
@@ -172,8 +171,8 @@ body {
       font-size: 20px;
       line-height: 24px;
       letter-spacing: 5.96px;
+      margin: 11px 0;
       color: #000000;
-      top: -58px;
     }
 
     &__details {
@@ -182,7 +181,7 @@ body {
       font-size: 17px;
       line-height: 20px;
       text-align: center;
-      top: -58px;
+
       color: #a5a5a5;
     }
   }
@@ -203,8 +202,7 @@ body {
     &__img {
       position: relative;
       z-index: 2;
-      top: -58px;
-      left: -5px;
+      left: 30px;
     }
     &__number {
       position: relative;
@@ -212,8 +210,8 @@ body {
       font-size: 20px;
       line-height: 24px;
       letter-spacing: 5.96px;
+      margin: 11px 0;
       color: #000000;
-      top: -58px;
     }
 
     &__details {
@@ -222,7 +220,6 @@ body {
       font-size: 17px;
       line-height: 20px;
       text-align: center;
-      top: -58px;
       color: #a5a5a5;
     }
   }
@@ -364,7 +361,7 @@ body {
     height: 370px;
 
     &__description {
-      width: 55%;
+      width: 50%;
       background-color: white;
       &--h3 {
         position: relative;
@@ -393,7 +390,7 @@ body {
       }
     }
     &__image {
-      width: 40%;
+      width: 35%;
       &--photo {
         position: relative;
         margin-top: 100px;
@@ -428,14 +425,13 @@ body {
 
 .suscription {
   margin-bottom: 30px;
-  border: 1px solid red;
+  border: 1px solid #eb476e;
   background-color: white;
   position: relative;
   width: 293px;
   height: 251px;
   border-radius: 18px;
-  &__general {
-  }
+
   &__price {
     display: inline-block;
     position: relative;
@@ -445,6 +441,8 @@ body {
       line-height: 24px;
     }
     &--p {
+      margin-top: 14px;
+      color: #eb476e;
       font-weight: 300;
       font-size: 46px;
     }
@@ -462,7 +460,7 @@ body {
         content: "";
         height: 15px;
         width: 15px;
-        background-image: url("./assets/checbox-success.png");
+        background-image: url("./assets/Checkbox.png");
         background-position: center center;
         background-size: cover;
         position: absolute;
@@ -504,6 +502,8 @@ body {
       line-height: 24px;
     }
     &--p {
+      color: #07ace6;
+      margin: 14px 0;
       font-weight: 300;
       font-size: 46px;
     }
@@ -523,10 +523,9 @@ body {
       position: relative;
       margin-bottom: 15px;
       &:before {
-        content: "";
         height: 15px;
         width: 15px;
-        background-image: url("./assets/Check.png");
+        background-image: url("./assets/Checkbox.png");
         background-position: center center;
         background-size: cover;
         position: absolute;
@@ -557,8 +556,7 @@ body {
   height: 251px;
   border: 1px solid #55dfb4;
   border-radius: 18px;
-  &__general {
-  }
+
   &__price {
     display: inline-block;
     position: relative;
@@ -568,6 +566,8 @@ body {
       line-height: 24px;
     }
     &--p {
+      color: #55dfb4;
+      margin: 14px 0;
       font-weight: 300;
       font-size: 46px;
     }
@@ -864,6 +864,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding-bottom: 100px;
 
     &__flex {
       display: flex;
@@ -871,6 +872,7 @@ body {
       justify-content: center;
       align-items: center;
       gap: 260px;
+      margin-top: 100px;
     }
 
     .person {
@@ -1003,7 +1005,6 @@ body {
       top: 0;
 
       &__description {
-        margin-left: 36px;
         &--h3 {
           position: relative;
           width: 198px;
@@ -1092,7 +1093,7 @@ body {
       }
       &__button {
         left: 0;
-        bottom: -100px;
+        bottom: -80px;
       }
     }
     .suscription2 {
@@ -1108,7 +1109,7 @@ body {
       }
       &__button {
         left: 0;
-        bottom: -100px;
+        bottom: -80px;
       }
     }
   }
