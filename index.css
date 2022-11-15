@@ -13,7 +13,6 @@ body {
 .header {
   display: block;
   text-align: center;
-  width: 375px;
   height: 70px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
 }
@@ -25,6 +24,7 @@ body {
   color: #08a6e4;
 }
 .header__button {
+  cursor: pointer;
   position: absolute;
   width: 20px;
   height: 12px;
@@ -65,6 +65,7 @@ body {
   color: #000000;
 }
 .home__button {
+  cursor: pointer;
   width: 310px;
   height: 67px;
   background: #08a6e4;
@@ -260,6 +261,10 @@ body {
   width: 192.76px;
   height: 109.93px;
   z-index: 2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 .details .first__image--circle {
   position: relative;
@@ -323,13 +328,17 @@ body {
   left: 47px;
 }
 .details .brand {
-  background-color: white;
+  background-color: transparent;
   margin: 42px 0;
   position: relative;
   top: 42px;
   left: 30px;
   width: 314px;
   height: 370px;
+}
+.details .brand__description {
+  width: 55%;
+  background-color: white;
 }
 .details .brand__description--h3 {
   position: relative;
@@ -354,6 +363,9 @@ body {
   font-size: 14px;
   line-height: 21px;
   top: 90px;
+}
+.details .brand__image {
+  width: 40%;
 }
 .details .brand__image--photo {
   position: relative;
@@ -429,6 +441,7 @@ body {
   left: -15px;
 }
 .suscription__button {
+  cursor: pointer;
   background-color: #eb476e;
   position: relative;
   width: 150px;
@@ -490,6 +503,7 @@ body {
   left: -15px;
 }
 .suscription1__button {
+  cursor: pointer;
   background-color: #07ace6;
   position: relative;
   width: 150px;
@@ -551,6 +565,7 @@ body {
   left: -15px;
 }
 .suscription2__button {
+  cursor: pointer;
   background-color: #55dfb4;
   position: relative;
   width: 150px;
@@ -648,6 +663,7 @@ body {
   border-bottom: 0.1px solid #95989a;
 }
 .questions__button {
+  cursor: pointer;
   position: relative;
   width: 226px;
   height: 57px;
@@ -683,7 +699,6 @@ body {
 
 .footer {
   display: block;
-  width: 375px;
   height: 89px;
   left: 0px;
   box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
@@ -714,6 +729,11 @@ body {
   margin-left: 70px;
 }
 .footer__logos--twitter {
+  cursor: pointer;
+  margin-right: 20px;
+}
+.footer__logos--facebook {
+  cursor: pointer;
   margin-right: 20px;
 }
 
@@ -780,8 +800,18 @@ body {
   .results__flex {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 260px;
+  }
+  .results .person {
+    left: 0;
+  }
+  .results .eye {
+    left: 0;
+  }
+  .results .group {
+    left: 0;
   }
   .details {
     width: 100%;
@@ -793,23 +823,51 @@ body {
   }
   .details .first {
     display: flex;
-    width: 70vw;
-    height: 300px;
+    flex-direction: row-reverse;
+    width: 70%;
     justify-content: space-between;
     align-items: center;
+    left: 0;
+    top: 0;
+  }
+  .details .first__description {
+    margin-left: 36px;
   }
   .details .first__description--h3 {
     width: 100%;
     height: 100%;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    font-size: 36px;
+    top: 0;
+  }
+  .details .first__description--p {
+    margin: 0;
+    margin-top: 17px;
+    font-size: 16px;
+    width: 416px;
+    height: 66px;
+    top: 0;
+    margin-bottom: 50px;
+  }
+  .details .first__image {
+    position: relative;
+    margin-right: 93px;
   }
   .details .first__image--photo {
-    width: 10vw;
-    height: 15vw;
+    margin: 0;
+    top: -70px;
+    width: 386.44px;
+    height: 219px;
+    left: 0;
   }
   .details .first__image--circle {
-    width: 11vw;
-    height: 11vw;
+    width: 180px;
+    height: 180px;
     border-radius: 41px;
+    top: 50px;
+    left: 200px;
+    transform: rotate(45deg);
   }
   .details .first__description {
     border-bottom: 4px solid #fb3b64;
@@ -817,51 +875,91 @@ body {
   .details .shop {
     background-color: white;
     display: flex;
-    width: 70vw;
-    height: 300px;
-    justify-content: space-between;
+    width: 70%;
+    justify-content: space-evenly;
     align-items: center;
-  }
-  .details .shop__description--h3 {
-    width: 100%;
-    height: 100%;
-  }
-  .details .shop__image--photo {
-    width: 10vw;
-    height: 15vw;
-  }
-  .details .shop__image--circle {
-    width: 11vw;
-    height: 11vw;
-    border-radius: 41px;
+    left: 0;
+    top: 0;
   }
   .details .shop__description {
+    margin-right: 20px;
     border-bottom: 4px solid #08a6e4;
+  }
+  .details .shop__description--h3 {
+    margin-top: 60px;
+    width: 259px;
+    height: 84px;
+    margin-left: 0px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .details .shop__description--p {
+    margin: 0;
+    margin-top: 17px;
+    width: 416px;
+    height: 66px;
+  }
+  .details .shop__image {
+    position: relative;
+    width: 50%;
+  }
+  .details .shop__image--photo {
+    width: 426px;
+    height: 328px;
+    margin: 0;
+  }
+  .details .shop__image--circle {
+    width: 320px;
+    height: 320px;
+    border-radius: 50 .details .shop__image--circle;
+    top: 0;
+    left: 0;
   }
   .details .brand {
     display: flex;
-    width: 70vw;
-    height: 300px;
+    width: 70%;
     justify-content: space-between;
-    align-items: center;
-    background-color: transparent;
-  }
-  .details .brand__description--h3 {
-    width: 100%;
-    height: 100%;
+    left: 0;
+    top: 0;
   }
   .details .brand__description {
-    background-color: red;
+    margin-left: 36px;
+  }
+  .details .brand__description--h3 {
+    position: relative;
+    width: 198px;
+    height: 72px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    margin-left: 35px;
+    top: 31px;
+  }
+  .details .brand__description--p {
+    margin: 0;
+    margin-top: 17px;
+    margin-left: 35px;
+    font-size: 16px;
+    width: 416px;
     border-bottom: 4px solid #55dfb4;
   }
-  .details .brand__image--photo {
-    margin: 0;
-  }
   .details .brand__image--circle {
-    width: 440px;
-    height: 370px;
-    border-radius: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #55dfb4;
+    z-index: 1;
     top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .details .brand__image--circle img {
+    width: 80%;
   }
   .pricing {
     display: flex;
