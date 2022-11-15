@@ -37,30 +37,33 @@
 
     <div class="results">
       <h3 class="results__h3">The most popular sales platform in country</h3>
-      <div class="person">
-        <div class="person__background"></div>
-        <img src="./assets/Person 2.png" alt="Person" class="person__img">
-        <p class="person__number">100000+</p>
-        <p class="person__details">daily entries</p>
+      <div class="results__flex">
+        <div class="person">
+          <div class="person__background"></div>
+          <img src="./assets/Person 2.png" alt="Person" class="person__img">
+          <p class="person__number">100000+</p>
+          <p class="person__details">daily entries</p>
+        </div>
+        <div class="eye">
+          <div class="eye__background"></div>
+          <img src="./assets/Eye 2.png" alt="Person" class="eye__img">
+          <p class="eye__number">2000000+</p>
+          <p class="eye__details">seen products
+            every day</p>
+        </div>
+        <div class="group">
+          <div class="group__background"></div>
+          <img src="./assets/Group.png" alt="Person" class="group__img">
+          <p class="group__number">10000+</p>
+          <p class="group__details">added posts
+            daily</p>
+        </div>
       </div>
-      <div class="eye">
-        <div class="eye__background"></div>
-        <img src="./assets/Eye 2.png" alt="Person" class="eye__img">
-        <p class="eye__number">2000000+</p>
-        <p class="eye__details">seen products
-          every day</p>
-      </div>
-      <div class="group">
-        <div class="group__background"></div>
-        <img src="./assets/Group.png" alt="Person" class="group__img">
-        <p class="group__number">10000+</p>
-        <p class="group__details">added posts
-          daily</p>
-      </div>
+
     </div>
 
     <!-- DETAILS -->
-    <div class="Details">
+    <section class="details">
       <div class="first">
         <div class="first__image">
           <img src="./assets/Macbook2 2.png" alt="photo" class="first__image--photo">
@@ -107,14 +110,12 @@
         </div>
 
       </div>
-    </div>
+    </section>
 
-    <div class="Princing">
-      <h3 class="Princing-title">Princing</h3>
-
-
-      <section class="suscription">
-        <div class="suscription__general">
+    <div class="pricing">
+      <h3 class="pricing__h3">Pricing</h3>
+      <div class="pricing__details">
+        <section class="suscription">
           <div class="suscription__price">
             <h4 class="suscription__price--h4">Basic</h4>
             <p class="suscription__price--p">$0</p>
@@ -128,12 +129,8 @@
             <li class="suscription__ul--li false">Full support</li>
           </ul>
           <button class="suscription__button">Begin</button>
-        </div>
-      </section>
-
-
-      <section class="suscription1">
-        <div class="suscription1__general">
+        </section>
+        <section class="suscription1">
           <div class="suscription1__price">
             <h4 class="suscription1__price--h4">Professional</h4>
             <p class="suscription1__price--p">$20</p>
@@ -148,11 +145,8 @@
             <li class="suscription1__ul--li false">Full support</li>
           </ul>
           <button class="suscription1__button">Begin</button>
-        </div>
-      </section>
-
-      <section class="suscription2">
-        <div class="suscription2__general">
+        </section>
+        <section class="suscription2">
           <div class="suscription2__price">
             <h4 class="suscription2__price--h4">Premium</h4>
             <p class="suscription2__price--p">$60</p>
@@ -167,56 +161,66 @@
             <li class="suscription2__ul--li false">Full support</li>
           </ul>
           <button class="suscription2__button">Begin</button>
-        </div>
-      </section>
+        </section>
+      </div>
+
     </div>
     </div>
-
-    <div class="question">
-      <h3 class="questions__h3">Any questions?</h3>
-      <p class="questions__p">Leave your email address or call us!</p>
-      <ul class="questions__ul">
-        <li class="questions__ul--mail">info@bestshop.xyz</li>
-        <li class="questions__ul--phone">123 456 789</li>
-      </ul>
-
-      <form action="submit" class="questions__form">
-        <div class="questions__name">
-          <span class="questions__name--span">NAME</span>
-          <input class="questions__name--input" type="text">
+    <div class="div">
+      <div class="questions">
+        <div class="questions__details">
+          <h3 class="questions__h3">Any questions?</h3>
+          <p class="questions__p">Leave your email address or call us!</p>
+          <ul class="questions__ul">
+            <li class="questions__ul--mail">info@bestshop.xyz</li>
+            <li class="questions__ul--phone">123 456 789</li>
+          </ul>
         </div>
-        <div class="questions__email">
-          <span class="questions__email--span">EMAIL</span>
-          <input class="questions__email--input" type="text">
-        </div>
+        <form action="submit" class="questions__form">
+          <div class="questions__name">
+            <span class="questions__name--span">NAME</span>
+            <input class="questions__name--input" type="text">
+          </div>
+          <div class="questions__email">
+            <span class="questions__email--span">EMAIL</span>
+            <input class="questions__email--input" type="text">
+          </div>
 
-        <div class="questions__consent">
-          <input type="checkbox" class="questions__consent--input">
-          <p class="questions__consent--p">I hereby give consent for my personal data included in my application to be
-            processed for the purposes of
-            the
-            recruitment process under the European Parliament's and Council of the European Union Regulation on the
-            Protection of
-            Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement
-            of such
-            data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
-        </div>
-        <button class="questions__button">
-          Send
-        </button>
-      </form>
+          <div class="questions__consent">
+            <input type="checkbox" class="questions__consent--input">
+            <p class="questions__consent--p">I hereby give consent for my personal data included in my application to be
+              processed for the purposes of
+              the
+              recruitment process under the European Parliament's and Council of the European Union Regulation on the
+              Protection of
+              Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free
+              movement
+              of such
+              data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+          </div>
+          <button class="questions__button">
+            Send
+          </button>
+        </form>
+      </div>
     </div>
+
   </main>
 
 
   <!-- FOOTER -->
-  <footer class=" Footer">
-    <h2 class="Footer-title">OXYGENShop</h2>
-    <p class="Footer-copyright">© 2022 OXYGEN, All Rights Reserved</p>
-    <div class="Footer-logos">
-      <a class="Footer-logos--twitter">Twitter</a>
-      <a class="Footer-logos--facebook">Facebook</a>
+  <footer class="footer">
+    <div class="footer__left">
+      <h2 class="footer__h2">OXYGENShop</h2>
+      <p class="footer__p">© 2022 OXYGEN, All Rights Reserved</p>
     </div>
+    <div class="footer__right">
+      <div class="footer__logos">
+        <a><img class="footer__logos--twitter" src="./assets//Twitter (2) 2.png" alt=""></a>
+        <a class="footer__logos--facebook"><img src="./assets/Facebook (3) 2.png" alt=""></a>
+      </div>
+    </div>
+
   </footer>
 
 

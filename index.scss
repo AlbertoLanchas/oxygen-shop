@@ -227,7 +227,7 @@ body {
   }
 }
 
-.Details {
+.details {
   display: block;
   background: #f7f7f7;
   width: 375px;
@@ -406,9 +406,9 @@ body {
   }
 }
 
-.Princing {
+.pricing {
   display: block;
-  &-title {
+  &__h3 {
     width: 114px;
     height: 42px;
     font-weight: 400;
@@ -420,13 +420,13 @@ body {
 
 .suscription {
   margin-bottom: 30px;
+  border: 1px solid red;
+  background-color: white;
+  position: relative;
+  width: 293px;
+  height: 251px;
+  border-radius: 18px;
   &__general {
-    background-color: white;
-    position: relative;
-    width: 293px;
-    height: 251px;
-    border: 1px solid red;
-    border-radius: 18px;
   }
   &__price {
     display: inline-block;
@@ -478,13 +478,13 @@ body {
 
 .suscription1 {
   margin-bottom: 30px;
+  background-color: white;
+  position: relative;
+  width: 293px;
+  height: 251px;
+  border: 1px solid #07ace6;
+  border-radius: 18px;
   &__general {
-    background-color: white;
-    position: relative;
-    width: 293px;
-    height: 251px;
-    border: 1px solid #07ace6;
-    border-radius: 18px;
   }
   &__price {
     display: inline-block;
@@ -517,7 +517,7 @@ body {
         content: "";
         height: 15px;
         width: 15px;
-        background-image: url("./assets/checbox-success.png");
+        background-image: url("./assets/Check.png");
         background-position: center center;
         background-size: cover;
         position: absolute;
@@ -541,13 +541,13 @@ body {
 
 .suscription2 {
   margin-bottom: 30px;
+  background-color: white;
+  position: relative;
+  width: 293px;
+  height: 251px;
+  border: 1px solid #55dfb4;
+  border-radius: 18px;
   &__general {
-    background-color: white;
-    position: relative;
-    width: 293px;
-    height: 251px;
-    border: 1px solid #55dfb4;
-    border-radius: 18px;
   }
   &__price {
     display: inline-block;
@@ -615,7 +615,6 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    left: 30px;
     margin-bottom: 38px;
   }
   &__ul {
@@ -627,9 +626,29 @@ body {
     list-style: none;
 
     &--mail {
+      &:before {
+        content: "";
+        height: 15px;
+        width: 15px;
+        background-image: url("./assets/Mail\ Icon\ 2.png");
+        background-position: center center;
+        background-size: cover;
+        position: absolute;
+        left: -15px;
+      }
     }
 
     &--phone {
+      &:before {
+        content: "";
+        height: 15px;
+        width: 15px;
+        background-image: url("./assets/Phone\ Icon\ 2.png");
+        background-position: center center;
+        background-size: cover;
+        position: absolute;
+        left: -15px;
+      }
     }
   }
 
@@ -719,21 +738,344 @@ body {
   }
 }
 
-.Footer {
+.footer {
   display: block;
   width: 375px;
   height: 89px;
   left: 0px;
   box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
+  background: #f7f7f7;
 
-  &-title {
+  &__left {
+    display: inline-block;
+    margin-top: 22px;
+    margin-left: 17px;
+  }
+  &__h2 {
     position: relative;
     font-weight: 300;
+    font-size: 26px;
+    line-height: 30px;
+    color: #08a6e4;
     color: #08a6e4;
   }
-  &-copyright {
+  &__p {
     position: relative;
     font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
     color: #a5a5a5;
+  }
+
+  &__right {
+    display: inline-block;
+    margin-left: 70px;
+  }
+
+  &__logos {
+    &--twitter {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__h1 {
+      position: inherit;
+    }
+
+    &__button {
+      position: inherit;
+    }
+  }
+
+  .home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    left: 0;
+
+    &__h2 {
+      width: 100%;
+      margin: 0;
+      left: 0;
+      font-weight: 400;
+      font-size: 49px;
+      line-height: 57px;
+    }
+
+    &__p {
+      width: 100%;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 3%;
+
+      left: 0;
+    }
+
+    &__button {
+      width: 440px;
+      height: 67px;
+      left: 0;
+      background: #08a6e4;
+      color: white;
+      border: none;
+      box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+      border-radius: 40px;
+    }
+  }
+
+  .background {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 51px;
+  }
+
+  .results {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  .details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 37px;
+
+    .first {
+      &__description {
+        &--h3 {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      display: flex;
+      width: 70vw;
+      height: 300px;
+      justify-content: space-between;
+      align-items: center;
+
+      &__image {
+        &--photo {
+          width: 10vw;
+          height: 15vw;
+        }
+
+        &--circle {
+          width: 11vw;
+          height: 11vw;
+          border-radius: 41px;
+        }
+      }
+
+      &__description {
+        border-bottom: 4px solid #fb3b64;
+      }
+    }
+
+    .shop {
+      &__description {
+        &--h3 {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      background-color: white;
+      display: flex;
+      width: 70vw;
+      height: 300px;
+      justify-content: space-between;
+      align-items: center;
+
+      &__image {
+        &--photo {
+          width: 10vw;
+          height: 15vw;
+        }
+
+        &--circle {
+          width: 11vw;
+          height: 11vw;
+          border-radius: 41px;
+        }
+      }
+
+      &__description {
+        border-bottom: 4px solid #08a6e4;
+      }
+    }
+
+    .brand {
+      &__description {
+        &--h3 {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      display: flex;
+      width: 70vw;
+      height: 300px;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      &__description {
+        background-color: red;
+        border-bottom: 4px solid #55dfb4;
+      }
+      &__image {
+        &--photo {
+          margin: 0;
+        }
+        &--circle {
+          width: 440px;
+          height: 370px;
+          border-radius: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  .pricing {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &__h3 {
+      margin-top: 100px;
+      margin-bottom: 70px;
+    }
+    &__details {
+      display: flex;
+      gap: 70px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .suscription {
+      width: 372px;
+      height: 461px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &__ul {
+        left: 0;
+      }
+      &__button {
+        left: 0;
+        bottom: -100px;
+      }
+    }
+    .suscription1 {
+      width: 372px;
+      height: 461px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &__ul {
+        left: 0;
+      }
+      &__button {
+        left: 0;
+        bottom: -100px;
+      }
+    }
+    .suscription2 {
+      width: 372px;
+      height: 461px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &__ul {
+        left: 0;
+      }
+      &__button {
+        left: 0;
+        bottom: -100px;
+      }
+    }
+  }
+  .div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .questions {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 150px;
+    &__h3 {
+      left: 0;
+    }
+
+    &__p {
+      margin-top: 20;
+      left: 0;
+    }
+
+    &__ul {
+      left: 0;
+    }
+
+    &__name {
+      margin: 0;
+    }
+
+    &__buton {
+      width: 226px;
+      height: 57px;
+    }
+
+    &__details {
+      margin-right: 100px;
+    }
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left {
+      margin-left: 120px;
+      margin-top: 0;
+    }
+
+    &__right {
+      margin-right: 120px;
+    }
   }
 }

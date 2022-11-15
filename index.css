@@ -214,13 +214,13 @@ body {
   color: #a5a5a5;
 }
 
-.Details {
+.details {
   display: block;
   background: #f7f7f7;
   width: 375px;
   height: 1395.66px;
 }
-.Details .first {
+.details .first {
   background-color: white;
   position: relative;
   top: 42px;
@@ -228,7 +228,7 @@ body {
   width: 314px;
   height: 370px;
 }
-.Details .first__description--h3 {
+.details .first__description--h3 {
   position: relative;
   width: 198px;
   height: 72px;
@@ -240,7 +240,7 @@ body {
   margin-left: 21px;
   top: -80px;
 }
-.Details .first__description--p {
+.details .first__description--p {
   position: relative;
   margin-top: 10px;
   margin-left: 21px;
@@ -253,7 +253,7 @@ body {
   line-height: 21px;
   top: -80px;
 }
-.Details .first__image--photo {
+.details .first__image--photo {
   position: relative;
   margin-top: 37px;
   margin-left: 37px;
@@ -261,7 +261,7 @@ body {
   height: 109.93px;
   z-index: 2;
 }
-.Details .first__image--circle {
+.details .first__image--circle {
   position: relative;
   width: 90.12px;
   height: 90.12px;
@@ -271,7 +271,7 @@ body {
   top: -132px;
   left: 144px;
 }
-.Details .shop {
+.details .shop {
   background-color: white;
   position: relative;
   top: 42px;
@@ -279,7 +279,7 @@ body {
   width: 314px;
   height: 370px;
 }
-.Details .shop__description--h3 {
+.details .shop__description--h3 {
   position: relative;
   width: 198px;
   height: 72px;
@@ -291,7 +291,7 @@ body {
   margin-left: 21px;
   top: -80px;
 }
-.Details .shop__description--p {
+.details .shop__description--p {
   position: relative;
   margin-top: 10px;
   margin-left: 21px;
@@ -304,7 +304,7 @@ body {
   line-height: 21px;
   top: -80px;
 }
-.Details .shop__image--photo {
+.details .shop__image--photo {
   position: relative;
   margin-top: 37px;
   margin-left: 37px;
@@ -312,7 +312,7 @@ body {
   height: 109.93px;
   z-index: 2;
 }
-.Details .shop__image--circle {
+.details .shop__image--circle {
   position: relative;
   width: 131.88px;
   height: 131.7px;
@@ -322,7 +322,7 @@ body {
   top: -144px;
   left: 47px;
 }
-.Details .brand {
+.details .brand {
   background-color: white;
   margin: 42px 0;
   position: relative;
@@ -331,7 +331,7 @@ body {
   width: 314px;
   height: 370px;
 }
-.Details .brand__description--h3 {
+.details .brand__description--h3 {
   position: relative;
   width: 198px;
   height: 72px;
@@ -343,7 +343,7 @@ body {
   margin-left: 21px;
   top: 31px;
 }
-.Details .brand__description--p {
+.details .brand__description--p {
   position: relative;
   margin-left: 21px;
   width: 274px;
@@ -355,7 +355,7 @@ body {
   line-height: 21px;
   top: 90px;
 }
-.Details .brand__image--photo {
+.details .brand__image--photo {
   position: relative;
   margin-top: 100px;
   margin-left: 37px;
@@ -363,7 +363,7 @@ body {
   height: 109.93px;
   z-index: 2;
 }
-.Details .brand__image--circle {
+.details .brand__image--circle {
   position: relative;
   width: 314px;
   height: 195px;
@@ -372,10 +372,10 @@ body {
   top: -144px;
 }
 
-.Princing {
+.pricing {
   display: block;
 }
-.Princing-title {
+.pricing__h3 {
   width: 114px;
   height: 42px;
   font-weight: 400;
@@ -386,13 +386,11 @@ body {
 
 .suscription {
   margin-bottom: 30px;
-}
-.suscription__general {
+  border: 1px solid red;
   background-color: white;
   position: relative;
   width: 293px;
   height: 251px;
-  border: 1px solid red;
   border-radius: 18px;
 }
 .suscription__price {
@@ -444,8 +442,6 @@ body {
 
 .suscription1 {
   margin-bottom: 30px;
-}
-.suscription1__general {
   background-color: white;
   position: relative;
   width: 293px;
@@ -486,7 +482,7 @@ body {
   content: "";
   height: 15px;
   width: 15px;
-  background-image: url("./assets/checbox-success.png");
+  background-image: url("./assets/Check.png");
   background-position: center center;
   background-size: cover;
   position: absolute;
@@ -507,8 +503,6 @@ body {
 
 .suscription2 {
   margin-bottom: 30px;
-}
-.suscription2__general {
   background-color: white;
   position: relative;
   width: 293px;
@@ -580,7 +574,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  left: 30px;
   margin-bottom: 38px;
 }
 .questions__ul {
@@ -590,6 +583,26 @@ body {
   line-height: 22px;
   left: 30px;
   list-style: none;
+}
+.questions__ul--mail:before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-image: url("./assets/Mail Icon 2.png");
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  left: -15px;
+}
+.questions__ul--phone:before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-image: url("./assets/Phone Icon 2.png");
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  left: -15px;
 }
 .questions__name {
   position: relative;
@@ -668,20 +681,293 @@ body {
   color: #707070;
 }
 
-.Footer {
+.footer {
   display: block;
   width: 375px;
   height: 89px;
   left: 0px;
   box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
+  background: #f7f7f7;
 }
-.Footer-title {
+.footer__left {
+  display: inline-block;
+  margin-top: 22px;
+  margin-left: 17px;
+}
+.footer__h2 {
   position: relative;
   font-weight: 300;
+  font-size: 26px;
+  line-height: 30px;
+  color: #08a6e4;
   color: #08a6e4;
 }
-.Footer-copyright {
+.footer__p {
   position: relative;
   font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
   color: #a5a5a5;
+}
+.footer__right {
+  display: inline-block;
+  margin-left: 70px;
+}
+.footer__logos--twitter {
+  margin-right: 20px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header__h1 {
+    position: inherit;
+  }
+  .header__button {
+    position: inherit;
+  }
+  .home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    left: 0;
+  }
+  .home__h2 {
+    width: 100%;
+    margin: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 57px;
+  }
+  .home__p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 3%;
+    left: 0;
+  }
+  .home__button {
+    width: 440px;
+    height: 67px;
+    left: 0;
+    background: #08a6e4;
+    color: white;
+    border: none;
+    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+    border-radius: 40px;
+  }
+  .background {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 51px;
+  }
+  .results {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .results__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 37px;
+  }
+  .details .first {
+    display: flex;
+    width: 70vw;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .details .first__description--h3 {
+    width: 100%;
+    height: 100%;
+  }
+  .details .first__image--photo {
+    width: 10vw;
+    height: 15vw;
+  }
+  .details .first__image--circle {
+    width: 11vw;
+    height: 11vw;
+    border-radius: 41px;
+  }
+  .details .first__description {
+    border-bottom: 4px solid #fb3b64;
+  }
+  .details .shop {
+    background-color: white;
+    display: flex;
+    width: 70vw;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .details .shop__description--h3 {
+    width: 100%;
+    height: 100%;
+  }
+  .details .shop__image--photo {
+    width: 10vw;
+    height: 15vw;
+  }
+  .details .shop__image--circle {
+    width: 11vw;
+    height: 11vw;
+    border-radius: 41px;
+  }
+  .details .shop__description {
+    border-bottom: 4px solid #08a6e4;
+  }
+  .details .brand {
+    display: flex;
+    width: 70vw;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+  }
+  .details .brand__description--h3 {
+    width: 100%;
+    height: 100%;
+  }
+  .details .brand__description {
+    background-color: red;
+    border-bottom: 4px solid #55dfb4;
+  }
+  .details .brand__image--photo {
+    margin: 0;
+  }
+  .details .brand__image--circle {
+    width: 440px;
+    height: 370px;
+    border-radius: 0;
+    top: 0;
+  }
+  .pricing {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pricing__h3 {
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+  .pricing__details {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+  }
+  .pricing .suscription {
+    width: 372px;
+    height: 461px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pricing .suscription__ul {
+    left: 0;
+  }
+  .pricing .suscription__button {
+    left: 0;
+    bottom: -100px;
+  }
+  .pricing .suscription1 {
+    width: 372px;
+    height: 461px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pricing .suscription1__ul {
+    left: 0;
+  }
+  .pricing .suscription1__button {
+    left: 0;
+    bottom: -100px;
+  }
+  .pricing .suscription2 {
+    width: 372px;
+    height: 461px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pricing .suscription2__ul {
+    left: 0;
+  }
+  .pricing .suscription2__button {
+    left: 0;
+    bottom: -100px;
+  }
+  .div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .questions {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 150px;
+  }
+  .questions__h3 {
+    left: 0;
+  }
+  .questions__p {
+    margin-top: 20;
+    left: 0;
+  }
+  .questions__ul {
+    left: 0;
+  }
+  .questions__name {
+    margin: 0;
+  }
+  .questions__buton {
+    width: 226px;
+    height: 57px;
+  }
+  .questions__details {
+    margin-right: 100px;
+  }
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__left {
+    margin-left: 120px;
+    margin-top: 0;
+  }
+  .footer__right {
+    margin-right: 120px;
+  }
 }/*# sourceMappingURL=index.css.map */
