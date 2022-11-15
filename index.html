@@ -15,39 +15,41 @@
 <body>
 
   <!-- HEADER -->
-  <header class="Header">
-    <h1 class="Header-title">OXYGENShop</h1>
-    <button class="Header-menu"></button>
+  <header class="header">
+    <h1 class="header__h1">OXYGENShop</h1>
+    <button class="header__button"></button>
   </header>
 
   <!-- MAIN  -->
-  <main class="Main">
-    <div class="Home">
-      <h2 class="Home-title">Sell More!</h2>
-      <p class="Home-text">Open shop on our platform and
-        increase your sales</p>
-      <button class="Home-shop">Open your shop</button>
-    </div>
-    <img src="./assets/Background.png" alt="Background" class="Background">
+  <main class="main">
 
-    <div class="Results">
-      <h3 class="Results-title">The most popular sales platform in country</h3>
-      <div class="Results-logo"></div>
-      <div class="Results-logo--1">
-        <div class="Results-logo-people">
+    <div class="home">
+      <h2 class="home__h2">Sell More!</h2>
+      <p class="home__p">Open shop on our platform and
+        increase your sales</p>
+      <button class="home__button">Open your shop</button>
+    </div>
+
+    <img src="./assets/Background.png" alt="Background" class="background">
+
+    <div class="results">
+      <h3 class="results-title">The most popular sales platform in country</h3>
+      <div class="results-logo"></div>
+      <div class="results-logo--1">
+        <div class="results-logo-people">
           <p>100000+</p>
           <p>daily entries</p>
         </div>
       </div>
-      <div class="Results-logo--2">
-        <div class="Results-logo-people">
+      <div class="results-logo--2">
+        <div class="results-logo-people">
           <p>2000000+</p>
           <p>seen products
             every day</p>
         </div>
       </div>
-      <div class="Results-logo--3">
-        <div class="Results-logo-people">
+      <div class="results-logo--3">
+        <div class="results-logo-people">
           <p>10000+</p>
           <p>added posts
             daily</p>
@@ -59,7 +61,7 @@
     <div class="Details">
       <div class="First">
         <div class="First-image">
-          <img src="./assets/Background.png" alt="photo" class="First-image--photo">
+          <img src="./assets/Macbook2 1.png" alt="photo" class="First-image--photo">
           <div class="First-image--rectangle"></div>
         </div>
         <div class="First-description">
@@ -76,7 +78,7 @@
       </div>
       <div class="Shop">
         <div class="Shop-image">
-          <img src="./assets/Background.png" alt="photo" class="Shop-image--photo">
+          <img src="./assets/iPhone2 2.png" alt="photo" class="Shop-image--photo">
           <div class="Shop-image--rectangle"></div>
         </div>
         <div class="Shop-description">
@@ -93,7 +95,7 @@
       </div>
       <div class="Brand">
         <div class="Brand-image">
-          <img src="./assets/Background.png" alt="photo" class="Brand-image--photo">
+          <img src="./assets/Trumpet 2.png" alt="photo" class="Brand-image--photo">
           <div class="Brand-image--rectangle"></div>
         </div>
         <div class="Brand-description">
@@ -114,111 +116,96 @@
       <h3 class="Princing-title">Princing</h3>
 
 
-      <div class="Suscription basic">
-        <div class="Suscription-general">
-          <h4 class="Suscription-general--type">Basic</h4>
-          <p class="Suscription-general--price">$0</p>
-        </div>
-        <div class="Suscription-details">
-          <div class="Suscription-details--text">
-            <i class="checked">A</i>
-            <p>100 MB HDD</p>
-            <i class="checked">A</i>
-            <p>1 Subdomain</p>
-            <i class="checked">A</i>
-            <p>2 E-mails</p>
-            <i class="checked">A</i>
-            <p>Two years license</p>
-            <i class="checked">A</i>
-            <p>Full suport</p>
+      <section class="suscription">
+        <div class="suscription__general">
+          <div class="suscription__price">
+            <h4 class="suscription__price--h4">Basic</h4>
+            <p class="suscription__price--p">$0</p>
           </div>
+
+          <ul class="suscription__ul">
+            <li class="suscription__ul--li">100 MB HDD</li>
+            <li class="suscription__ul--li">1 Subdomain</li>
+            <li class="suscription__ul--li">2 E-mails</li>
+            <li class="suscription__ul--li false">Two years license</li>
+            <li class="suscription__ul--li false">Full support</li>
+          </ul>
+          <button class="suscription__button">Begin</button>
         </div>
-        <button class="Suscription-begin">Begin</button>
-      </div>
+      </section>
 
 
-
-      <div class="Suscription professional">
-        <div class="Suscription-general">
-          <h4 class="Suscription-general--type">Professional</h4>
-          <p class="Suscription-general--price">$25</p>
-          <p class="Suscription-limited">Limited offer</p>
-        </div>
-        <div class="Suscription-details">
-          <div class="Suscription-details--text">
-            <i class="checked">A</i>
-            <p>500 MB HDD</p>
-            <i class="checked">A</i>
-            <p>2 Subdomains</p>
-            <i class="checked">A</i>
-            <p>5 E-mails</p>
-            <i class="checked">A</i>
-            <p>One year license</p>
-            <i class="checked">A</i>
-            <p>Full suport</p>
+      <section class="suscription1">
+        <div class="suscription1__general">
+          <div class="suscription1__price">
+            <h4 class="suscription1__price--h4">Professional</h4>
+            <p class="suscription1__price--p">$20</p>
+            <p class="suscription1__price--offer">Limited offer</p>
           </div>
+
+          <ul class="suscription1__ul">
+            <li class="suscription1__ul--li">500 MB HDD</li>
+            <li class="suscription1__ul--li">2 Subdomains</li>
+            <li class="suscription1__ul--li">5 E-mails</li>
+            <li class="suscription1__ul--li false">One year license</li>
+            <li class="suscription1__ul--li false">Full support</li>
+          </ul>
+          <button class="suscription1__button">Begin</button>
+        </div>
+      </section>
+
+      <section class="suscription2">
+        <div class="suscription2__general">
+          <div class="suscription2__price">
+            <h4 class="suscription2__price--h4">Premium</h4>
+            <p class="suscription2__price--p">$60</p>
+            <p class="suscription2__price--offer">Limited offer</p>
+          </div>
+
+          <ul class="suscription2__ul">
+            <li class="suscription2__ul--li">2 GB HDD</li>
+            <li class="suscription2__ul--li">5 Subdomains</li>
+            <li class="suscription2__ul--li">20 E-mails</li>
+            <li class="suscription2__ul--li false">Two years license</li>
+            <li class="suscription2__ul--li false">Full support</li>
+          </ul>
+          <button class="suscription2__button">Begin</button>
+        </div>
+      </section>
+    </div>
+    </div>
+
+    <div class="question">
+      <h3 class="questions__h3">Any questions?</h3>
+      <p class="questions__p">Leave your email address or call us!</p>
+      <ul class="questions__ul">
+        <li class="questions__ul--mail">info@bestshop.xyz</li>
+        <li class="questions__ul--phone">123 456 789</li>
+      </ul>
+
+      <form action="submit" class="questions__form">
+        <div class="questions__name">
+          <span class="questions__name--span">NAME</span>
+          <input class="questions__name--input" type="text">
+        </div>
+        <div class="questions__email">
+          <span class="questions__email--span">EMAIL</span>
+          <input class="questions__email--input" type="text">
         </div>
 
-        <button class="Suscription-begin">Begin</button>
-      </div>
-    </div>
-
-
-
-    <div class="Suscription premium">
-      <div class="Suscription-general">
-        <h4 class="Suscription-general--type">Premium</h4>
-        <p class="Suscription-general--price">$60</p>
-        <p class="Suscription-limited">Limited offer</p>
-      </div>
-      <div class="Suscription-details">
-        <div class="Suscription-details--text">
-          <i class="checked">A</i>
-          <p>2 GB HDD</p>
-          <i class="checked">A</i>
-          <p>5 Subdomains</p>
-          <i class="checked">A</i>
-          <p>20 E-mails</p>
-          <i class="checked">A</i>
-          <p>Two years license</p>
-          <i class="checked">A</i>
-          <p>Full suport</p>
+        <div><input type="checkbox">
+          <p>I hereby give consent for my personal data included in my application to be processed for the purposes of
+            the
+            recruitment process under the European Parliament's and Council of the European Union Regulation on the
+            Protection of
+            Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement
+            of such
+            data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
         </div>
-      </div>
-      <button class="Suscription-begin">Begin</button>
-    </div>
-    </div>
-
-
-    <div class="Form">
-      <h3 class="Form-title">Any questions?</h3>
-      <p class="Form-paragraph">Leave your email address or call us!</p>
-      <div class="Form-details">
-        <i>A</i>
-        <p>info@bestshop.xyz</p>
-        <i>T</i>
-        <p>123 456 789</p>
-      </div>
-
-      <div class="Form-name">
-        <span>NAME</span>
-        <input type="text">
-      </div>
-      <div class="Form-email">
-        <span>EMAIL</span>
-        <input type="text">
-      </div>
-      <div><input type="checkbox">
-        <p>I hereby give consent for my personal data included in my application to be processed for the purposes of the
-          recruitment process under the European Parliament's and Council of the European Union Regulation on the
-          Protection of
-          Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement
-          of such
-          data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
-      </div>
-      <button>
-        <Send></Send>
-      </button>
+        <button class="questions__button">
+          Send
+        </button>
+      </form>
     </div>
   </main>
 

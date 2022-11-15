@@ -10,22 +10,22 @@ body {
   font-style: normal;
 }
 
-.Header {
+.header {
   display: block;
   text-align: center;
   width: 375px;
   height: 70px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
 }
-.Header-title {
+.header__h1 {
   text-align: center;
   position: absolute;
   font-weight: 300;
   margin: 17px;
   color: #08a6e4;
 }
-.Header-menu {
-  background-color: blue;
+.header__button {
+  background-color: #08a6e4;
   position: absolute;
   width: 20px;
   height: 12px;
@@ -33,8 +33,7 @@ body {
   margin: 29px 0;
 }
 
-.Home {
-  background-color: brown;
+.home {
   display: block;
   position: relative;
   width: 310px;
@@ -42,7 +41,7 @@ body {
   margin-top: 100px;
   left: 33px;
 }
-.Home-title {
+.home__h2 {
   position: relative;
   width: 162px;
   height: 57px;
@@ -52,7 +51,7 @@ body {
   text-align: center;
   left: 73.59px;
 }
-.Home-text {
+.home__p {
   position: relative;
   width: 308px;
   height: 57px;
@@ -65,7 +64,7 @@ body {
   text-align: center;
   color: #000000;
 }
-.Home-shop {
+.home__button {
   width: 310px;
   height: 67px;
   background: #08a6e4;
@@ -75,16 +74,15 @@ body {
   border-radius: 40px;
 }
 
-.Background {
+.background {
   display: block;
   position: relative;
-  width: 779px;
+  width: 375px;
   height: 267px;
-  left: -201.5px;
   margin-top: 51px;
 }
 
-.Results {
+.results {
   background-color: yellow;
   display: block;
   width: 375px;
@@ -97,30 +95,30 @@ body {
   text-align: center;
   color: #000000;
 }
-.Results-title {
+.results-title {
   background-color: green;
   display: block;
   font-weight: 300;
   margin-top: 13px;
 }
-.Results-logo {
+.results-logo {
   display: block;
 }
-.Results-logo--1 {
+.results-logo--1 {
   background-color: red;
   position: relative;
   width: 117px;
   height: 140px;
   margin-top: 25px;
 }
-.Results-logo--2 {
+.results-logo--2 {
   background-color: blue;
   position: relative;
   width: 176px;
   height: 167px;
   margin-top: 25px;
 }
-.Results-logo--3 {
+.results-logo--3 {
   background-color: greenyellow;
   position: relative;
   width: 163px;
@@ -253,7 +251,6 @@ body {
 }
 
 .Princing {
-  background-color: burlywood;
   display: block;
 }
 .Princing-title {
@@ -265,52 +262,267 @@ body {
   color: #000000;
 }
 
-.Suscription {
+.suscription {
+  margin-bottom: 30px;
+}
+.suscription__general {
   background-color: white;
   position: relative;
   width: 293px;
   height: 251px;
-  left: 41px;
+  border: 1px solid red;
+  border-radius: 18px;
 }
-.Suscription-general {
-  background-color: red;
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-}
-.Suscription-general--type {
-  width: 52px;
-  height: 24px;
-}
-.Suscription-general--price {
-  width: 59px;
-  height: 64px;
-}
-.Suscription-details {
+.suscription__price {
   display: inline-block;
   position: relative;
-  background-color: brown;
+  display: inline-block;
 }
-.Suscription-begin {
-  display: block;
+.suscription__price--h4 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.suscription__price--p {
+  font-weight: 300;
+  font-size: 46px;
+}
+.suscription__ul {
+  position: relative;
+  display: inline-block;
+  list-style: none;
+  left: 70px;
+  top: 20px;
+}
+.suscription__ul--li {
+  position: relative;
+  margin-bottom: 15px;
+}
+.suscription__ul--li:before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-image: url("./assets/checbox-success.png");
+  background-position: center center;
+  background-size: cover;
   position: absolute;
-  bottom: 0;
+  top: 6px;
+  left: -15px;
+}
+.suscription__button {
+  background-color: #eb476e;
+  position: relative;
   width: 150px;
   height: 50px;
+  border-radius: 18px;
+  bottom: -40px;
+  left: 60px;
+  border: none;
+  color: white;
+}
+
+.suscription1 {
+  margin-bottom: 30px;
+}
+.suscription1__general {
+  background-color: white;
+  position: relative;
+  width: 293px;
+  height: 251px;
+  border: 1px solid #07ace6;
+  border-radius: 18px;
+}
+.suscription1__price {
+  display: inline-block;
+  position: relative;
+  display: inline-block;
+}
+.suscription1__price--h4 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.suscription1__price--p {
+  font-weight: 300;
+  font-size: 46px;
+}
+.suscription1__price--offer {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+}
+.suscription1__ul {
+  position: relative;
+  display: inline-block;
+  list-style: none;
+  left: 70px;
+  top: 20px;
+}
+.suscription1__ul--li {
+  position: relative;
+  margin-bottom: 15px;
+}
+.suscription1__ul--li:before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-image: url("./assets/checbox-success.png");
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 6px;
+  left: -15px;
+}
+.suscription1__button {
+  background-color: #07ace6;
+  position: relative;
+  width: 150px;
+  height: 50px;
+  border-radius: 18px;
+  bottom: -40px;
+  left: 60px;
+  border: none;
+  color: white;
+}
+
+.suscription2 {
+  margin-bottom: 30px;
+}
+.suscription2__general {
+  background-color: white;
+  position: relative;
+  width: 293px;
+  height: 251px;
+  border: 1px solid #55dfb4;
+  border-radius: 18px;
+}
+.suscription2__price {
+  display: inline-block;
+  position: relative;
+  display: inline-block;
+}
+.suscription2__price--h4 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.suscription2__price--p {
+  font-weight: 300;
+  font-size: 46px;
+}
+.suscription2__price--offer {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+}
+.suscription2__ul {
+  position: relative;
+  display: inline-block;
+  list-style: none;
+  left: 70px;
+  top: 20px;
+}
+.suscription2__ul--li {
+  position: relative;
+  margin-bottom: 15px;
+}
+.suscription2__ul--li:before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-image: url("./assets/checbox-success.png");
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 6px;
+  left: -15px;
+}
+.suscription2__button {
+  background-color: #55dfb4;
+  position: relative;
+  width: 150px;
+  height: 50px;
+  border-radius: 18px;
+  bottom: -40px;
+  left: 60px;
+  border: none;
+  color: white;
+}
+
+.questions__h3 {
+  position: relative;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  left: 30px;
+}
+.questions__p {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  left: 30px;
+  margin-bottom: 38px;
+}
+.questions__ul {
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  left: 30px;
+  list-style: none;
+}
+.questions__form {
+  background-color: red;
+}
+.questions__name {
+  position: relative;
+  margin-top: 57px;
+  display: block;
+  left: 30px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 3.28px;
+  color: #08a6e4;
+}
+.questions__name--span {
+  display: block;
+  margin-bottom: 42px;
+}
+.questions__name--input {
+  display: block;
+  border: none;
+  background-color: transparent;
+  border-bottom: 0.1px solid #95989a;
+  width: 312px;
+}
+.questions__email {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 3.28px;
+  position: relative;
+  margin-top: 42px;
+  left: 30px;
+  color: #08a6e4;
+}
+.questions__email--span {
+  display: block;
+  margin-bottom: 42px;
+}
+.questions__email--input {
+  display: block;
+  border: none;
+  width: 312px;
+  background-color: transparent;
+  border-bottom: 0.1px solid #95989a;
+}
+.questions__button {
+  width: 226px;
+  height: 57px;
+  background: #08a6e4;
+  color: white;
   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
-  border-radius: 23px;
-}
-
-.basic {
-  border: red 2px solid;
-}
-
-.professional {
-  border: #07ace6 2px solid;
-}
-
-.premium {
-  border: green 2px solid;
+  border-radius: 35px;
+  border: none;
 }
 
 .Footer {
