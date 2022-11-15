@@ -441,7 +441,7 @@ body {
         content: "";
         height: 15px;
         width: 15px;
-        background-image: url("./assets/checbox-success.png");
+        background-image: url("./assets/Checkbox.png");
         background-position: center center;
         background-size: cover;
         position: absolute;
@@ -495,7 +495,6 @@ body {
   }
 
   &__form {
-    background-color: red;
   }
   &__name {
     position: relative;
@@ -543,6 +542,7 @@ body {
   }
 
   &__button {
+    position: relative;
     width: 226px;
     height: 57px;
     background: #08a6e4;
@@ -550,12 +550,38 @@ body {
     box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
     border-radius: 35px;
     border: none;
+    margin-top: 33px;
+    margin-bottom: 44px;
+    left: 116px;
+  }
+
+  &__consent {
+    margin-top: 42px;
+    margin-left: 32px;
+    &--input {
+      display: inline-block;
+      position: relative;
+      margin-right: 10px;
+      top: -115px;
+    }
+
+    &--p {
+      display: inline-block;
+      position: relative;
+      // top: 100px;
+      width: 277px;
+      height: 144px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+
+      color: #707070;
+    }
   }
 }
 
 .Footer {
   display: block;
-  background-color: brown;
   width: 375px;
   height: 89px;
   left: 0px;

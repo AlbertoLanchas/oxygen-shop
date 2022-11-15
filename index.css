@@ -427,7 +427,7 @@ body {
   content: "";
   height: 15px;
   width: 15px;
-  background-image: url("./assets/checbox-success.png");
+  background-image: url("./assets/Checkbox.png");
   background-position: center center;
   background-size: cover;
   position: absolute;
@@ -468,9 +468,6 @@ body {
   line-height: 22px;
   left: 30px;
   list-style: none;
-}
-.questions__form {
-  background-color: red;
 }
 .questions__name {
   position: relative;
@@ -516,6 +513,7 @@ body {
   border-bottom: 0.1px solid #95989a;
 }
 .questions__button {
+  position: relative;
   width: 226px;
   height: 57px;
   background: #08a6e4;
@@ -523,11 +521,33 @@ body {
   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
   border-radius: 35px;
   border: none;
+  margin-top: 33px;
+  margin-bottom: 44px;
+  left: 116px;
+}
+.questions__consent {
+  margin-top: 42px;
+  margin-left: 32px;
+}
+.questions__consent--input {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  top: -115px;
+}
+.questions__consent--p {
+  display: inline-block;
+  position: relative;
+  width: 277px;
+  height: 144px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #707070;
 }
 
 .Footer {
   display: block;
-  background-color: brown;
   width: 375px;
   height: 89px;
   left: 0px;
