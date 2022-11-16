@@ -276,7 +276,7 @@ body {
       width: 50%;
       padding-bottom: 30px;
       &--photo {
-        position: relative;
+        position: absolute;
         margin: 0 auto;
         z-index: 2;
         background-position: center;
@@ -285,13 +285,16 @@ body {
         position: relative;
       }
       &--circle {
-        position: relative;
+        position: absolute;
         background-color: #fb3b64;
-        border-radius: 50%;
+        border-radius: 41px;
         z-index: 1;
         margin: 0 auto;
         width: 90.12px;
         height: 90.12px;
+        top: 15px;
+
+        right: 47px;
       }
     }
   }
@@ -425,18 +428,22 @@ body {
 }
 
 .suscription {
-  margin-bottom: 30px;
   border: 1px solid #eb476e;
   background-color: white;
   position: relative;
   width: 293px;
   height: 251px;
   border-radius: 18px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 
   &__price {
     display: inline-block;
     position: relative;
     display: inline-block;
+    left: 20px;
+    top: -15px;
+
     &--h4 {
       font-size: 20px;
       line-height: 24px;
@@ -452,8 +459,11 @@ body {
     position: relative;
     display: inline-block;
     list-style: none;
-    left: 70px;
+    left: 90px;
     top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
     &--li {
       position: relative;
       margin-bottom: 15px;
@@ -466,7 +476,7 @@ body {
         background-size: cover;
         position: absolute;
         top: 6px;
-        left: -15px;
+        left: -25px;
       }
     }
   }
@@ -485,26 +495,27 @@ body {
 }
 
 .suscription1 {
-  margin-bottom: 30px;
   background-color: white;
   position: relative;
   width: 293px;
   height: 251px;
   border: 1px solid #07ace6;
   border-radius: 18px;
-  &__general {
-  }
+  margin: 0 auto;
+  margin-bottom: 30px;
+
   &__price {
     display: inline-block;
     position: relative;
     display: inline-block;
+    left: 20px;
     &--h4 {
       font-size: 20px;
       line-height: 24px;
     }
     &--p {
       color: #07ace6;
-      margin: 14px 0;
+      margin-top: 14px;
       font-weight: 300;
       font-size: 46px;
     }
@@ -518,12 +529,16 @@ body {
     position: relative;
     display: inline-block;
     list-style: none;
-    left: 70px;
-    top: 20px;
+    top: 26px;
+    left: 55px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
     &--li {
       position: relative;
       margin-bottom: 15px;
       &:before {
+        content: "";
         height: 15px;
         width: 15px;
         background-image: url("./assets/Checkbox.png");
@@ -531,7 +546,7 @@ body {
         background-size: cover;
         position: absolute;
         top: 6px;
-        left: -15px;
+        left: -25px;
       }
     }
   }
@@ -550,18 +565,19 @@ body {
 }
 
 .suscription2 {
-  margin-bottom: 30px;
   background-color: white;
   position: relative;
   width: 293px;
   height: 251px;
   border: 1px solid #55dfb4;
   border-radius: 18px;
+  margin: 0 auto;
 
   &__price {
     display: inline-block;
     position: relative;
     display: inline-block;
+    left: 25px;
     &--h4 {
       font-size: 20px;
       line-height: 24px;
@@ -582,8 +598,11 @@ body {
     position: relative;
     display: inline-block;
     list-style: none;
-    left: 70px;
+    left: 75px;
     top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
     &--li {
       position: relative;
       margin-bottom: 15px;
@@ -596,7 +615,7 @@ body {
         background-size: cover;
         position: absolute;
         top: 6px;
-        left: -15px;
+        left: -25px;
       }
     }
   }
@@ -891,6 +910,7 @@ body {
       display: flex;
       flex-direction: row-reverse;
       width: 70%;
+      min-width: 900px;
       justify-content: space-between;
       align-items: center;
       left: 0;
@@ -921,18 +941,20 @@ body {
         position: relative;
         margin-right: 93px;
         &--photo {
+          position: absolute;
           margin: 0;
-          top: -70px;
           width: 386.44px;
           height: 219px;
-          left: 0;
+          top: -80px;
+          right: 0;
         }
 
         &--circle {
           width: 180px;
           height: 180px;
           border-radius: 41px;
-          top: 50px;
+          top: -100px;
+          right: 0px;
           transform: rotate(45deg);
         }
       }
@@ -946,6 +968,7 @@ body {
       background-color: white;
       display: flex;
       width: 70%;
+      min-width: 900px;
       justify-content: space-evenly;
       align-items: center;
       left: 0;
@@ -973,7 +996,8 @@ body {
         position: relative;
         width: 50%;
         &--photo {
-          width: 426px;
+          width: 100%;
+          max-width: 426px;
           height: 328px;
           margin: 0;
         }
@@ -991,6 +1015,7 @@ body {
     .brand {
       display: flex;
       width: 70%;
+      min-width: 900px;
       justify-content: space-between;
       left: 0;
       top: 0;
@@ -1056,7 +1081,8 @@ body {
     }
 
     .suscription {
-      width: 372px;
+      width: 80%;
+      min-width: 300px;
       height: 461px;
       display: flex;
       flex-direction: column;
@@ -1072,7 +1098,8 @@ body {
       }
     }
     .suscription1 {
-      width: 372px;
+      width: 80%;
+      min-width: 300px;
       height: 461px;
       display: flex;
       flex-direction: column;
@@ -1088,7 +1115,8 @@ body {
       }
     }
     .suscription2 {
-      width: 372px;
+      width: 80%;
+      min-width: 300px;
       height: 461px;
       display: flex;
       flex-direction: column;
