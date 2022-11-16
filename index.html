@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -186,14 +188,14 @@
             </li>
           </ul>
         </div>
-        <form action="submit" class="questions__form">
+        <form class="questions__form">
           <div class="questions__name">
             <span class="questions__name--span">NAME</span>
-            <input class="questions__name--input" type="text">
+            <input class="questions__name--input" type="text" required>
           </div>
           <div class="questions__email">
             <span class="questions__email--span">EMAIL</span>
-            <input class="questions__email--input" type="text">
+            <input class="questions__email--input" type="text" required>
           </div>
 
           <div class="questions__consent">
@@ -218,6 +220,9 @@
   </main>
 
 
+  <button class="scroll-top-btn">&#11014</button>
+  <span id="scroll-porcentaje"></span>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer__left">
@@ -235,5 +240,6 @@
 
 
 </body>
+
 
 </html>

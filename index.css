@@ -1112,4 +1112,41 @@ body {
   .footer__right {
     margin-right: 120px;
   }
+}
+.scroll-top-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  right: calc(4.25rem + 1vw);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  color: #07ace6;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
+  border: 1px solid black;
+}
+
+.scroll-top-btn:hover {
+  background-color: rgba(7, 172, 230, 0.29);
+  color: darkblue;
+}
+
+.hidden {
+  display: none;
+}
+
+#scroll-porcentaje {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  background-color: #07ace6;
+  color: #07ace6;
+  width: 1px;
+  height: 10px;
 }/*# sourceMappingURL=index.css.map */
