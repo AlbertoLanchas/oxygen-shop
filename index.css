@@ -12,7 +12,6 @@ body {
 
 .header {
   display: block;
-  text-align: center;
   height: 70px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
 }
@@ -28,12 +27,14 @@ body {
   position: absolute;
   width: 20px;
   height: 12px;
-  left: 325px;
-  margin: 29px 0;
+  margin: 0 auto;
   border: none;
+  right: 25px;
+  top: 30px;
 }
 
 .home {
+  margin: 0 auto;
   display: block;
   position: relative;
   width: 310px;
@@ -78,9 +79,9 @@ body {
 .background {
   display: block;
   position: relative;
-  width: 375px;
-  height: 267px;
+  width: 100%;
   margin-top: 51px;
+  margin: 0 auto;
 }
 
 .results {
@@ -94,6 +95,7 @@ body {
   line-height: 35px;
   text-align: center;
   color: #000000;
+  margin: 0 auto;
 }
 .results__h3 {
   display: block;
@@ -211,50 +213,53 @@ body {
 }
 
 .details {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   background: #f7f7f7;
-  width: 375px;
-  height: 1395.66px;
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 40px;
 }
 .details .first {
   background-color: white;
   position: relative;
-  top: 42px;
-  left: 30px;
-  width: 314px;
-  height: 370px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
 }
 .details .first__description--h3 {
   position: relative;
-  width: 198px;
-  height: 72px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 35px;
-  margin-left: 21px;
-  top: -80px;
+  margin: 0 auto;
+  max-width: 272px;
+  max-height: 370px;
+  padding-bottom: 50px;
 }
 .details .first__description--p {
   position: relative;
   margin-top: 10px;
   margin-left: 21px;
-  width: 272px;
-  height: 84px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
-  top: -80px;
+  max-width: 272px;
+  margin: 0 auto;
+}
+.details .first__image {
+  margin-bottom: 30px;
+  margin: 0 auto;
+  width: 50%;
+  padding-bottom: 30px;
 }
 .details .first__image--photo {
   position: relative;
-  margin-top: 37px;
-  margin-left: 37px;
-  width: 192.76px;
-  height: 109.93px;
+  margin: 0 auto;
   z-index: 2;
   background-position: center;
   background-repeat: no-repeat;
@@ -263,54 +268,56 @@ body {
 }
 .details .first__image--circle {
   position: relative;
-  width: 90.12px;
-  height: 90.12px;
   background-color: #fb3b64;
   border-radius: 50%;
   z-index: 1;
-  top: -132px;
-  left: 144px;
+  margin: 0 auto;
+  width: 90.12px;
+  height: 90.12px;
 }
 .details .shop {
   background-color: white;
   position: relative;
-  top: 42px;
-  left: 30px;
-  width: 314px;
-  height: 370px;
+  width: 90%;
+  margin: 0 auto;
 }
 .details .shop__description--h3 {
   position: relative;
-  width: 198px;
-  height: 72px;
+  max-width: 272px;
+  max-height: 72px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 35px;
-  margin-left: 21px;
-  top: -80px;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 .details .shop__description--p {
   position: relative;
   margin-top: 10px;
   margin-left: 21px;
-  width: 272px;
+  max-width: 272px;
   height: 84px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  top: -80px;
+  margin: 40px auto;
+  margin-top: 40px;
+}
+.details .shop__image {
+  margin-top: 20px;
 }
 .details .shop__image--photo {
   position: relative;
-  margin-top: 37px;
-  margin-left: 37px;
-  width: 192.76px;
-  height: 109.93px;
+  margin: 0 auto;
   z-index: 2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 .details .shop__image--circle {
   position: relative;
@@ -319,68 +326,62 @@ body {
   background-color: #08a6e4;
   border-radius: 50%;
   z-index: 1;
-  top: -144px;
-  left: 47px;
+  margin: 0 auto;
 }
 .details .brand {
   background-color: transparent;
   margin: 42px 0;
   position: relative;
-  top: 42px;
-  left: 30px;
-  width: 314px;
-  height: 370px;
+  width: 90%;
+  margin: 0 auto;
 }
 .details .brand__description {
-  width: 50%;
   background-color: white;
 }
 .details .brand__description--h3 {
   position: relative;
-  width: 198px;
-  height: 72px;
+  max-width: 274px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 35px;
-  margin-left: 21px;
-  top: 31px;
+  margin: 0 auto;
+  padding-top: 31px;
 }
 .details .brand__description--p {
   position: relative;
   margin-left: 21px;
-  width: 274px;
-  height: 114px;
+  max-width: 274px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  top: 90px;
-}
-.details .brand__image {
-  width: 35%;
+  margin: 0px auto;
+  margin-top: 20px;
+  padding-bottom: 20px;
 }
 .details .brand__image--photo {
   position: relative;
-  margin-top: 100px;
-  margin-left: 37px;
+  margin: 0 auto;
   width: 192.76px;
   height: 109.93px;
   z-index: 2;
 }
 .details .brand__image--circle {
+  display: flex;
   position: relative;
-  width: 314px;
-  height: 195px;
   background-color: #55dfb4;
   z-index: 1;
-  top: -144px;
 }
 
 .pricing {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
 .pricing__h3 {
   width: 114px;
@@ -577,12 +578,18 @@ body {
   color: white;
 }
 
+.questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
 .questions__h3 {
   position: relative;
   font-weight: 400;
   font-size: 40px;
   line-height: 47px;
-  left: 30px;
 }
 .questions__p {
   position: relative;
@@ -599,25 +606,8 @@ body {
   left: 30px;
   list-style: none;
 }
-.questions__ul--mail:before {
-  content: "";
-  height: 15px;
-  width: 15px;
-  background-image: url("./assets/Mail Icon 2.png");
-  background-position: center center;
-  background-size: cover;
-  position: absolute;
-  left: -15px;
-}
-.questions__ul--phone:before {
-  content: "";
-  height: 15px;
-  width: 15px;
-  background-image: url("./assets/Phone Icon 2.png");
-  background-position: center center;
-  background-size: cover;
-  position: absolute;
-  left: -15px;
+.questions__ul--mail {
+  display: inline-block;
 }
 .questions__name {
   position: relative;
@@ -741,23 +731,31 @@ body {
   .header {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
   .header__h1 {
     position: inherit;
+    margin: 0 50px;
   }
   .header__button {
     position: inherit;
+    margin: 0 50px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .home {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10%;
-    left: 0;
+    width: 100%;
+    height: 100%;
   }
   .home__h2 {
     width: 100%;
@@ -772,7 +770,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    margin-top: 3%;
+    margin-top: 20px;
     left: 0;
   }
   .home__button {
@@ -789,8 +787,7 @@ body {
     display: block;
     position: relative;
     width: 100%;
-    height: 500px;
-    margin-top: 51px;
+    height: 20%;
   }
   .results {
     display: flex;
@@ -822,6 +819,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 37px;
+    padding: 100px 0;
   }
   .details .first {
     display: flex;
@@ -847,7 +845,7 @@ body {
     margin: 0;
     margin-top: 17px;
     font-size: 16px;
-    width: 416px;
+    max-width: 416px;
     height: 66px;
     top: 0;
     margin-bottom: 50px;
@@ -868,7 +866,6 @@ body {
     height: 180px;
     border-radius: 41px;
     top: 50px;
-    left: 200px;
     transform: rotate(45deg);
   }
   .details .first__description {
@@ -888,8 +885,8 @@ body {
     border-bottom: 4px solid #08a6e4;
   }
   .details .shop__description--h3 {
-    margin-top: 60px;
-    width: 259px;
+    margin: 0;
+    max-width: 259px;
     height: 84px;
     margin-left: 0px;
     font-weight: 400;
@@ -898,9 +895,8 @@ body {
   }
   .details .shop__description--p {
     margin: 0;
-    margin-top: 17px;
-    width: 416px;
-    height: 66px;
+    margin-top: 30px;
+    max-width: 416px;
   }
   .details .shop__image {
     position: relative;
@@ -925,24 +921,26 @@ body {
     left: 0;
     top: 0;
   }
+  .details .brand__description {
+    width: 60%;
+    height: 300px;
+  }
   .details .brand__description--h3 {
     position: relative;
-    width: 198px;
-    height: 72px;
+    max-width: 348px;
     font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 35px;
     margin-left: 35px;
-    top: 31px;
   }
   .details .brand__description--p {
     margin: 0;
     margin-top: 17px;
     margin-left: 35px;
     font-size: 16px;
-    width: 416px;
+    max-width: 416px;
     border-bottom: 4px solid #55dfb4;
   }
   .details .brand__image--circle {
@@ -1027,25 +1025,45 @@ body {
     align-items: center;
   }
   .questions {
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
     margin-top: 150px;
+    gap: 100px;
   }
   .questions__h3 {
     left: 0;
+    position: inherit;
   }
   .questions__p {
     margin-top: 20;
-    left: 0;
+    position: inherit;
   }
   .questions__ul {
     left: 0;
+    display: flex;
+    gap: 40px;
+    color: #a5a5a5;
+  }
+  .questions__ul--phone {
+    display: flex;
+    gap: 5px;
+  }
+  .questions__ul--mail {
+    display: flex;
+    gap: 5px;
   }
   .questions__name {
     margin: 0;
+    position: inherit;
+  }
+  .questions__email {
+    position: inherit;
+  }
+  .questions__consent {
+    margin-left: 0px;
   }
   .questions__buton {
     width: 226px;
