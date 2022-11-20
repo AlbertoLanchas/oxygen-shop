@@ -20,15 +20,31 @@
   <!-- HEADER -->
   <header class="header">
     <h1 class="header__h1">OXYGENShop</h1>
-    <button class="header__button">
-      <img src="./assets/Menu.png" alt="Menu">
+    <button class="header__button panel-btn is-active">
+      <img src="./assets/Menu.png" alt="Menu" class="header__button--menu">
+      <img src="./assets/menuCross.png" alt="Menu" class="header__button--cross">
     </button>
-    <div class="header__links">
+
+
+
+
+
+
+    <!-- <div class="header__links">
       <a>WHY US</a>
       <a>BENEFITS</a>
       <a>PRICES</a>
       <a>CONTACT</a>
-    </div>
+    </div> -->
+
+    <aside class="panel header__links">
+      <nav class="menu" class="header__links">
+        <a>WHY US</a>
+        <a>BENEFITS</a>
+        <a>PRICES</a>
+        <a>CONTACT</a>
+      </nav>
+    </aside>
   </header>
 
   <!-- MAIN  -->
@@ -125,11 +141,18 @@
 
     <div class="pricing">
       <h3 class="pricing__h3">Pricing</h3>
+
+      <select class="pricing__select" id="pricingSelect" name="selectCurrency">
+        <option value="gbp" id="gbp-option">GBP </option>
+        <option value="eur" id="eur-option">EUR</option>
+        <option value="usd" id="usd-option" selected>USD </option>
+      </select>
+
       <div class="pricing__details">
         <section class="suscription">
           <div class="suscription__price">
             <h4 class="suscription__price--h4">Basic</h4>
-            <p class="suscription__price--p">$0</p>
+            <p class="suscription__price--p" id="basicPrice"></p>
           </div>
 
           <ul class="suscription__ul">
@@ -144,7 +167,7 @@
         <section class="suscription1">
           <div class="suscription1__price">
             <h4 class="suscription1__price--h4">Professional</h4>
-            <p class="suscription1__price--p">$20</p>
+            <p class="suscription1__price--p" id="professionalPrice"></p>
             <p class="suscription1__price--offer">Limited offer</p>
           </div>
 
@@ -160,7 +183,7 @@
         <section class="suscription2">
           <div class="suscription2__price">
             <h4 class="suscription2__price--h4">Premium</h4>
-            <p class="suscription2__price--p">$60</p>
+            <p class="suscription2__price--p" id="premiumPrice"></p>
             <p class="suscription2__price--offer">Limited offer</p>
           </div>
 
@@ -194,18 +217,20 @@
             </li>
           </ul>
         </div>
-        <form class="questions__form">
+        <form class="questions__form" id="form">
           <div class="questions__name">
             <span class="questions__name--span">NAME</span>
-            <input class="questions__name--input" type="text" required>
+            <input class="questions__name--input" id="name" type="text" required>
           </div>
           <div class="questions__email">
             <span class="questions__email--span">EMAIL</span>
-            <input class="questions__email--input" type="text" required>
+            <input class="questions__email--input" id="email" type="text" required>
           </div>
 
           <div class="questions__consent">
-            <input type="checkbox" class="questions__consent--input">
+            <div class="questions__consent--input" id="checkboxDiv"> <input type="checkbox" id="checkboxForm" required>
+            </div>
+
             <p class="questions__consent--p">I hereby give consent for my personal data included in my application to be
               processed for the purposes of
               the
@@ -249,6 +274,18 @@
       </div>
     </div>
   </div>
+
+
+  <article class="modal" ">
+    <div class=" modal-container">
+    <button class="modal-close">
+      X
+    </button>
+    <p>Suscribe to our newsletter</p>
+    <input class="modal__email" id="emailModal" type="text">
+    <button>Suscribe</button>
+    </div>
+  </article>
 
   <!-- FOOTER -->
   <footer class="footer">
