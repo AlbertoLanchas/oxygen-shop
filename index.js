@@ -2,7 +2,7 @@ const d = document,
   w = window;
 
 d.addEventListener("DOMContentLoaded", (e) => {
-  hamburguerMenu(".panel-btn", ".panel", ".panel-cross");
+  // hamburguerMenu(".panel-btn", ".panel", ".panel-cross");
   closeModal(".modal-close", ".modal");
   scrollTopButton(".scroll-top-btn");
   modalValidation();
@@ -108,12 +108,37 @@ d.addEventListener("scroll", (e) => {
 });
 
 //SLIDER
+
+// class Slider {
+//   constructor(imagenPrincipal) {
+//     this.imagenPrincipal = imagenPrincipal;
+//   }
+// }
+
 function slider() {
   const $nextBtn = d.querySelector(".slider-btn .next");
   const $prevBtn = d.querySelector(".slider-btn .prev");
   const $slides = d.querySelectorAll(".slider-slide");
+  const $btns = d.querySelectorAll(".slider__btn");
 
   let i = 0;
+
+  for (j = 0; j < $btns.length; j++) {
+    $btns[j].addEventListener("click", (e) => {
+      const images = d.querySelectorAll(".slider-slide");
+      for (j = 0; j < images.length; j++) {
+        if (e.target.value == j) {
+          images[j].classList.add("active");
+        } else {
+          images[j].classList.remove("active");
+        }
+      }
+    });
+  }
+  const autoImages = () => {};
+  setInterval(() => {}, 500);
+
+  // d.getElementById($prevBtn).addEventListener("click", () => {});
 
   d.addEventListener("click", (e) => {
     if (e.target === $prevBtn) {
@@ -142,21 +167,22 @@ function slider() {
   });
 }
 
+setTimeout(() => {}, 1000);
+
 //HAMBURGUER BUTTON
 
-function hamburguerMenu(menuBtn, panel, menuCross) {
-  // hamburguerMenu(".panel-btn", ".panel", ".menu a");
-  d.addEventListener("click", (e) => {
-    if (e.target.matches(menuBtn) || e.target.matches(`${menuBtn} *`)) {
-      d.querySelector(panel).classList.toggle("is-active");
-      d.querySelector(menuBtn).classList.toggle("is-active");
-    }
+document.getElementById("menuIcon").addEventListener("click", aparece);
 
-    // if (e.target.matches(menuCross) || e.target.matches(`${menuCross} *`)) {
-    //   d.querySelector(panel).classList.toggle("is-active");
-    //   d.querySelector(menuCross).classList.toggle("is-active");
-    // }
-  });
+function aparece() {
+  document.getElementById("menu").classList.toggle("open");
+  if (
+    document.getElementById("menu").getAttribute("class") ==
+    "panel header__links open"
+  ) {
+    document.getElementById("menuIcon").src = "./assets/menuCross.png";
+  } else {
+    document.getElementById("menuIcon").src = "./assets/Menu.png";
+  }
 }
 
 //MODAL

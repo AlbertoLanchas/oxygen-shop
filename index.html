@@ -21,24 +21,12 @@
   <header class="header">
     <h1 class="header__h1">OXYGENShop</h1>
     <button class="header__button panel-btn is-active">
-      <img src="./assets/Menu.png" alt="Menu" class="header__button--menu">
-      <img src="./assets/menuCross.png" alt="Menu" class="header__button--cross">
+      <img src="./assets/Menu.png" alt="Menu" class="header__button--menu" id="menuIcon">
+      <!-- <img src="./assets/menuCross.png" alt="Menu" class="header__button--cross"> -->
     </button>
 
-
-
-
-
-
-    <!-- <div class="header__links">
-      <a>WHY US</a>
-      <a>BENEFITS</a>
-      <a>PRICES</a>
-      <a>CONTACT</a>
-    </div> -->
-
-    <aside class="panel header__links">
-      <nav class="menu" class="header__links">
+    <aside class="panel header__links" id="menu">
+      <nav class="menu">
         <a>WHY US</a>
         <a>BENEFITS</a>
         <a>PRICES</a>
@@ -257,21 +245,27 @@
   <div class="slider">
     <div class="slider-slides">
       <div class="slider-slide active">
-        <img src="https://placeimg.com/600/400/people" alt="architecture">
+        <img src="./assets/nature (1).webp" alt="nature">
       </div>
-      <div class="slider-slide active">
-        <img src="https://placeimg.com/600/400/architecture" alt="architecture">
+      <div class="slider-slide">
+        <img src="./assets/nature (2).webp" alt="nature">
       </div>
-      <div class="slider-slide active">
-        <img src="https://placeimg.com/600/400/nature" alt="architecture">
+      <div class="slider-slide">
+        <img src="./assets/nature (3).webp" alt="nature">
       </div>
-      <div class="slider-slide active">
-        <img src="https://placeimg.com/600/400/any" alt="architecture">
+      <div class="slider-slide">
+        <img src="./assets/nature (4).webp" alt="nature">
       </div>
       <div class="slider-btn">
-        <a href="#" class="prev">&laquo</a>
-        <a href="#" class="next">&raquo</a>
+        <button class="prev">&laquo</button>
+        <button class="next">&raquo</button>
       </div>
+    </div>
+    <div class="slider__btnContainer">
+      <button class="slider__btn" value="0"></button>
+      <button class="slider__btn" value="1"></button>
+      <button class="slider__btn" value="2"></button>
+      <button class="slider__btn" value="3"></button>
     </div>
   </div>
 
